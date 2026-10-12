@@ -1,0 +1,4 @@
+interface:
+  display_name: "桌面端凭据安全存储"
+  short_description: "限定系统钥匙串与凭据管理器，禁止普通文件保存，更新凭据不回显旧值"
+  default_prompt: "使用 $desktop-credential-storage 为桌面应用实现或审查系统安全凭据存储，确保不写普通文件、更新不回显。"
