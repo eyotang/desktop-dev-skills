@@ -1,0 +1,4 @@
+interface:
+  display_name: "桌面开发交付流程"
+  short_description: "串起桌面开发验证、提交脱敏与发布验收，保留可追踪的交付证据"
+  default_prompt: "使用 $desktop-delivery-workflow 检查当前桌面项目从开发、提交到发布的遗漏，并在已有授权范围内完成交付。"

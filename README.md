@@ -11,6 +11,7 @@
 | [tauri-desktop-development](skills/tauri-desktop-development/SKILL.md) | Rust、IPC、插件权限与任务生命周期 | 按项目实际版本开发 Tauri 应用 |
 | [desktop-cross-platform](skills/desktop-cross-platform/SKILL.md) | 路径、系统能力、运行时差异与支持矩阵 | macOS、Windows、Ubuntu |
 | [desktop-release](skills/desktop-release/SKILL.md) | 安装包、签名、公证及升级验证 | 按目标平台与渠道发布 |
+| [desktop-delivery-workflow](skills/desktop-delivery-workflow/SKILL.md) | 开发验证、提交脱敏与发布交付闭环 | 跨阶段交付及公开仓库准备 |
 | [desktop-testing](skills/desktop-testing/SKILL.md) | 业务、IPC、原生集成与安装包验收 | 区分模拟、编译和原生运行证据 |
 
 凭据持久化位置限定为 macOS Keychain、Windows Credential Manager 普通凭据、Ubuntu Secret Service（通常为 GNOME Keyring）。
@@ -52,6 +53,8 @@ npx skills update desktop-credential-storage -g
 更新用于已安装的 skills；合集新增 skill 后，重新运行安装命令选择新条目。以本仓库为源文件维护，不直接修改安装副本。
 
 ## 如何选择
+
+- 从开发推进到提交和发布、或准备公开仓库时用 `desktop-delivery-workflow`。
 
 - 界面与交互用 `desktop-ui-design`；Rust/前端功能集成用 `tauri-desktop-development`。
 - 平台差异用 `desktop-cross-platform`；安装和升级交付用 `desktop-release`。
