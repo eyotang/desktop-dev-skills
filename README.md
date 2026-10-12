@@ -1,12 +1,17 @@
 # Desktop Dev Skills
 
-面向 **macOS、Windows、Ubuntu** 的桌面应用开发 Agent Skills 合集。适用于 Codex 等支持 Agent Skills 的工具，持续沉淀真实项目中验证过的开发规则。
+面向 **macOS、Windows、Ubuntu** 的桌面应用开发 Agent Skills 合集。适用于 Codex 等支持 Agent Skills 的工具，持续整理桌面开发规则；每个项目仍需按实际平台验证实现。
 
 ## Skills
 
 | Skill | 用途 | 范围 |
 | --- | --- | --- |
 | [desktop-credential-storage](skills/desktop-credential-storage/SKILL.md) | 仅使用系统凭据存储，禁止普通文件保存，更新不回显旧凭据 | Tauri、Electron、原生桌面应用；不适用于 Web |
+| [desktop-ui-design](skills/desktop-ui-design/SKILL.md) | 窗口布局、键盘操作、主题及无障碍 | 原生、Tauri、Electron 桌面 UI |
+| [tauri-desktop-development](skills/tauri-desktop-development/SKILL.md) | Rust、IPC、插件权限与任务生命周期 | 按项目实际版本开发 Tauri 应用 |
+| [desktop-cross-platform](skills/desktop-cross-platform/SKILL.md) | 路径、系统能力、运行时差异与支持矩阵 | macOS、Windows、Ubuntu |
+| [desktop-release](skills/desktop-release/SKILL.md) | 安装包、签名、公证及升级验证 | 按目标平台与渠道发布 |
+| [desktop-testing](skills/desktop-testing/SKILL.md) | 业务、IPC、原生集成与安装包验收 | 区分模拟、编译和原生运行证据 |
 
 凭据持久化位置限定为 macOS Keychain、Windows Credential Manager 普通凭据、Ubuntu Secret Service（通常为 GNOME Keyring）。
 
@@ -46,9 +51,13 @@ npx skills update desktop-credential-storage -g
 
 更新用于已安装的 skills；合集新增 skill 后，重新运行安装命令选择新条目。以本仓库为源文件维护，不直接修改安装副本。
 
-## 扩展方向
+## 如何选择
 
-未来按实际项目需要增加桌面 UI 设计、Tauri 开发、跨平台兼容、打包发布和原生测试。目前这些方向尚未提供独立 skill。
+- 界面与交互用 `desktop-ui-design`；Rust/前端功能集成用 `tauri-desktop-development`。
+- 平台差异用 `desktop-cross-platform`；安装和升级交付用 `desktop-release`。
+- 测试验收用 `desktop-testing`；凭据存储与更新用 `desktop-credential-storage`。
+
+各 skill 可独立安装，不强制依赖整个合集；任务跨多个领域时可组合调用。新 skill 是可执行工作规范，不代表对应应用已经通过三平台验证。
 
 新增规范见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 

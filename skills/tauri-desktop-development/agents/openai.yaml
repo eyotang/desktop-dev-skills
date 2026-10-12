@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tauri 桌面应用开发"
+  short_description: "实现 Tauri 原生功能与前端协作，明确 IPC 边界、任务生命周期和插件权限"
+  default_prompt: "使用 $tauri-desktop-development 完成当前桌面应用相关工作，并说明实际验证范围。"

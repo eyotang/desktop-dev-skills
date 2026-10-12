@@ -1,0 +1,4 @@
+interface:
+  display_name: "桌面应用打包发布"
+  short_description: "准备三平台安装包、签名和升级流程，区分构建成功、可安装与正式发布"
+  default_prompt: "使用 $desktop-release 完成当前桌面应用相关工作，并说明实际验证范围。"

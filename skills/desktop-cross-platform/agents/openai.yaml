@@ -1,0 +1,4 @@
+interface:
+  display_name: "桌面端跨平台兼容"
+  short_description: "处理三平台系统能力与运行差异，以明确支持矩阵和原生验证界定兼容范围"
+  default_prompt: "使用 $desktop-cross-platform 完成当前桌面应用相关工作，并说明实际验证范围。"

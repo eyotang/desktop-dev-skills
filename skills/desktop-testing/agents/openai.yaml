@@ -1,0 +1,4 @@
+interface:
+  display_name: "桌面应用测试验收"
+  short_description: "验证业务、IPC、原生集成和安装后行为，明确模拟测试与三平台实测边界"
+  default_prompt: "使用 $desktop-testing 完成当前桌面应用相关工作，并说明实际验证范围。"
